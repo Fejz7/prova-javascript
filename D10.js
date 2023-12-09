@@ -119,9 +119,9 @@ else return true
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
-const dataAttuale = new date('December 9, 2023')
-const day = dataAttuale.getDay()
-console.log(day)
+// const dataAttuale = new date('December 9, 2023')
+// const day = dataAttuale.getDay()
+// console.log(day) errore date is not defined
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
   Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, e deve tornare un oggetto contenente una proprietà "sum":
@@ -142,6 +142,12 @@ console.log(day)
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+let isTodayMyBirthday = '7 febbraio'
+if (isTodayMyBirthday !== '7 febbraio') {
+console.log (false) 
+} else (isTodayMyBirthday === '7 febbraio'); {
+  console.log (true)
+}
 
 // Arrays & Oggetti
 
@@ -159,19 +165,37 @@ console.log(day)
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
+// const countMovies = (array) => {
+//   return array.length
+// }
 
+// console.log(countMovies(movies))
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
+// const onlyTheYears = (array) => {
+//   return array.map((elem) => elem.Year)
+// }
 
+// console.log(onlyTheYears(movies)) errore cannot access movies before initialization
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+// const onlyInLastMillennium = (array) => {
+//   return array.filter((movie) => {
+//     return parseInt(movie.Year) < 2000
+//   })
+// }
 
+// console.log(onlyInLastMillennium(movies))
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
+// const sumAllTheYears = (array) => {
+//   return array.reduce((acc, curr) => acc + parseInt(curr.Year), 0)
+// }
 
+// console.log(sumAllTheYears(movies))
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
@@ -190,11 +214,15 @@ console.log(day)
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-
+const searchContainer = function () {
+  const trovaContainer = document.getElementById('container')
+}
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-
+const tds = function () {
+  const td1 = document.getElementsByName('td')
+}
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
